@@ -745,7 +745,7 @@ h3 {
   aspect-ratio: 4 / 5;
   border-bottom: 7px solid var(--blue);
   object-fit: cover;
-  object-position: 63% center;
+  object-position: center;
 }
 
 .about-image p {
