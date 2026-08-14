@@ -398,8 +398,6 @@ h3 {
 
 .hero-visual {
   position: relative;
-  width: 80%;
-  justify-self: end;
 }
 
 .image-frame {
@@ -418,9 +416,7 @@ h3 {
 
 .image-frame img {
   width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  object-position: center;
+  height: auto;
 }
 
 .image-caption {
@@ -1239,10 +1235,6 @@ h3 {
     max-width: 720px;
   }
 
-  .hero-visual {
-    justify-self: center;
-  }
-
   .stakes-grid {
     gap: 10px;
   }
@@ -1313,11 +1305,6 @@ h3 {
 
   .text-link {
     align-self: flex-start;
-  }
-
-  .hero-visual {
-    width: 100%;
-    justify-self: stretch;
   }
 
   .image-caption {

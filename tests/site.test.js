@@ -52,12 +52,12 @@ test("responsive and reduced-motion styles are present", () => {
 });
 
 test("swapped portraits retain intentional focal framing", () => {
-  assert.match(css, /\.image-frame img\s*\{[^}]*aspect-ratio:\s*1 \/ 1;[^}]*\}/s);
   assert.doesNotMatch(css, /\.image-frame img\s*\{[^}]*min-height:[^}]*\}/s);
   assert.match(css, /\.about-image img\s*\{[^}]*object-position:\s*100% center;[^}]*\}/s);
 });
 
-test("hero portrait scales down without shrinking on mobile", () => {
-  assert.match(css, /\.hero-visual\s*\{[^}]*width:\s*80%;[^}]*\}/s);
-  assert.match(css, /@media \(max-width: 620px\)[\s\S]*?\.hero-visual\s*\{[^}]*width:\s*100%;[^}]*\}/);
+test("hero portrait uses its native dimensions without cropping", () => {
+  assert.match(css, /\.image-frame img\s*\{[^}]*width:\s*100%;[^}]*height:\s*auto;[^}]*\}/s);
+  assert.doesNotMatch(css, /\.image-frame img\s*\{[^}]*(?:aspect-ratio|object-fit|object-position):[^}]*\}/s);
+  assert.doesNotMatch(css, /\.hero-visual\s*\{[^}]*width:[^}]*\}/s);
 });
