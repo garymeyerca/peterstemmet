@@ -724,7 +724,8 @@ h3 {
 }
 
 .about-section {
-  background: var(--cream);
+  color: var(--white);
+  background: var(--ink);
 }
 
 .about-grid {
@@ -753,7 +754,7 @@ h3 {
   margin: 0;
   padding: 12px 17px;
   color: var(--white);
-  background: var(--ink);
+  background: var(--signal);
   font-size: 0.69rem;
   font-weight: 600;
   letter-spacing: 0.06em;
@@ -762,12 +763,20 @@ h3 {
   transform: rotate(180deg);
 }
 
+.about-section .kicker {
+  color: #7bb1ff;
+}
+
 .about-copy .lead {
-  color: #233844;
+  color: #e4e9ed;
 }
 
 .about-copy > p:not(.kicker):not(.lead) {
-  color: var(--muted);
+  color: #a6b5c0;
+}
+
+.about-section .dark-link {
+  color: var(--white);
 }
 
 .process-section {

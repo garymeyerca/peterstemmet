@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "python3 -m http.server 4173",
+    "generate:social": "swift scripts/generate-social-share.swift",
     "test": "node --test",
     "check": "npm test && node --check script.js"
   }
