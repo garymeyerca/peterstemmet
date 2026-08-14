@@ -398,6 +398,8 @@ h3 {
 
 .hero-visual {
   position: relative;
+  width: 80%;
+  justify-self: end;
 }
 
 .image-frame {
@@ -1238,8 +1240,7 @@ h3 {
   }
 
   .hero-visual {
-    width: calc(100% - 30px);
-    margin-left: 30px;
+    justify-self: center;
   }
 
   .stakes-grid {
@@ -1316,7 +1317,7 @@ h3 {
 
   .hero-visual {
     width: 100%;
-    margin-left: 0;
+    justify-self: stretch;
   }
 
   .image-caption {

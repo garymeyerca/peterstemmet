@@ -56,3 +56,8 @@ test("swapped portraits retain intentional focal framing", () => {
   assert.doesNotMatch(css, /\.image-frame img\s*\{[^}]*min-height:[^}]*\}/s);
   assert.match(css, /\.about-image img\s*\{[^}]*object-position:\s*100% center;[^}]*\}/s);
 });
+
+test("hero portrait scales down without shrinking on mobile", () => {
+  assert.match(css, /\.hero-visual\s*\{[^}]*width:\s*80%;[^}]*\}/s);
+  assert.match(css, /@media \(max-width: 620px\)[\s\S]*?\.hero-visual\s*\{[^}]*width:\s*100%;[^}]*\}/);
+});
