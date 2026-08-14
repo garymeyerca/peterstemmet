@@ -418,7 +418,7 @@ h3 {
   width: 100%;
   min-height: 470px;
   object-fit: cover;
-  object-position: 62% center;
+  object-position: center;
 }
 
 .image-caption {
@@ -745,7 +745,7 @@ h3 {
   aspect-ratio: 4 / 5;
   border-bottom: 7px solid var(--blue);
   object-fit: cover;
-  object-position: center;
+  object-position: 82% center;
 }
 
 .about-image p {
