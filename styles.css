@@ -416,7 +416,7 @@ h3 {
 
 .image-frame img {
   width: 100%;
-  min-height: 470px;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: center;
 }
@@ -745,7 +745,7 @@ h3 {
   aspect-ratio: 4 / 5;
   border-bottom: 7px solid var(--blue);
   object-fit: cover;
-  object-position: 82% center;
+  object-position: 100% center;
 }
 
 .about-image p {
@@ -1083,10 +1083,6 @@ h3 {
     font-size: clamp(4.1rem, 8.5vw, 6.4rem);
   }
 
-  .image-frame img {
-    min-height: 440px;
-  }
-
   .proof-inner {
     align-items: flex-start;
     flex-direction: column;
@@ -1321,10 +1317,6 @@ h3 {
   .hero-visual {
     width: 100%;
     margin-left: 0;
-  }
-
-  .image-frame img {
-    min-height: 340px;
   }
 
   .image-caption {

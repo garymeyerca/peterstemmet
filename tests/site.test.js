@@ -50,3 +50,9 @@ test("responsive and reduced-motion styles are present", () => {
   assert.match(css, /:focus-visible/);
   assert.match(css, /\.js \.reveal/);
 });
+
+test("swapped portraits retain intentional focal framing", () => {
+  assert.match(css, /\.image-frame img\s*\{[^}]*aspect-ratio:\s*1 \/ 1;[^}]*\}/s);
+  assert.doesNotMatch(css, /\.image-frame img\s*\{[^}]*min-height:[^}]*\}/s);
+  assert.match(css, /\.about-image img\s*\{[^}]*object-position:\s*100% center;[^}]*\}/s);
+});
